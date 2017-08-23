@@ -1,0 +1,72 @@
+{
+"status": "UP",
+"diskSpace": {
+"status": "UP",
+"free": 1715047386054656,
+"threshold": 10485760
+},
+"redis": {
+"status": "UP",
+"version": "3.0.2"
+},
+"hystrix": {
+"status": "UP"
+}
+}
+-------------------
+{
+"status": "UP",
+"db": {
+"status": "UP",
+"database": "oracle"
+}
+}
+
+-------------------
+
+{
+  "status": "UP",
+  "diskSpace": {
+    "status": "UP",
+    "free": 2455197646848,
+    "threshold": 10485760
+  },
+  "solr": {
+    "status": "UP",
+    "firstSolr": {
+      "status": "UP",
+      "solrStatus": "OK"
+    },
+    "secondSolr": {
+      "status": "UP",
+      "solrStatus": "OK"
+    },
+    "thirdSolr": {
+      "status": "UP",
+      "solrStatus": "OK"
+    }
+  },
+  "redis": {
+    "status": "UP",
+    "version": "3.0.2"
+  },
+  "hystrix": {
+    "status": "UP"
+  }
+}
+
+-------------------
+
+{
+"status": "UP",
+"solrs": [
+{
+"name": "Test1",
+"status": "UP"
+},
+{
+"name": "Test2",
+"status": "UP"
+}
+]
+}

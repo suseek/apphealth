@@ -1,0 +1,83 @@
+@mixin material-icon($content) {
+  content: $content;
+  font-family: 'Material Icons', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin flex() {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+}
+
+@mixin user-select($value) {
+  -moz-user-select: $value;
+  -webkit-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin placeholder-styling() {
+  ::-webkit-input-placeholder { color: #FFFFF9;}
+}
+
+@mixin panel-default() {
+  box-shadow: rgba(0, 0, 0, .117647) 0px 1px 6px, rgba(0, 0, 0, .117647) 0px 1px 4px;
+  border-radius: 2px;
+  border: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@mixin default-shadow() {
+  transition: all .2s ease-out;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+@mixin default-shadow() {
+  transition: all .2s ease-out;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  }
+}
+
+@mixin circle($size, $color, $font-size) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color;
+  width: $size;
+  height: $size;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@mixin round-button($size, $color, $font-size) {
+  cursor: pointer;
+  @include circle($size, $color, $font-size);
+  @include default-shadow();
+
+  .material-icons {
+    color: #fff;
+    font-size: $font-size;
+  }
+}
+
