@@ -18,7 +18,7 @@
             [healthcheck.core.websockets :refer [ws-handler notify-clients]]
             [compojure.handler :as handler]))
 
-(def checking? (atom false))
+(def checking? (atom true))
 
 (def mount-target
   [:div#app
