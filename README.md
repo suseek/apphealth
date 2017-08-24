@@ -1,6 +1,6 @@
 # AppHealth
 
-Health check application for `actulator like` endpoints (e.g. spring-boot).
+Health check application for `actuator` like endpoints (e.g. spring-boot).
 
 You can check the [live demo here](http://apphealth.herokuapp.com/).
 
